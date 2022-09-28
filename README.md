@@ -1,4 +1,7 @@
-# 번개장터 B 개발일지
+<h1>
+<img alt="Youtube" src ="https://img.shields.io/badge/Youtube-E34F26.svg?&style=for-the-badge&logo=Youtube&logoColor=white"/> 
+Youtube API
+</h1>
 템플릿의 저작권은 (주)소프트스퀘어드에 있습니다. 상업적 용도의 사용을 금합니다.
 
 
