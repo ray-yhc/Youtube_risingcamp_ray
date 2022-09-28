@@ -1,0 +1,39 @@
+server:
+  port: 9000  # 9000번 포트로 실행
+
+spring:
+  application:
+    name: demo
+
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://ray-test.cvyspeixfkg3.ap-northeast-2.rds.amazonaws.com/youtube_practice?autoReconnect=true
+    # url 형식은 jdbc:mysql://RDS의 EndPoint/내부 DB 스키마명 입니다.
+    username: admin # 만약 따로 설정하지 않으셨다면 기본값은 admin 입니다
+    password: javaProfessional # 비밀번호를 입력해주세요!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 789244417023-epok34fi90c33qgulifbadjh1h9p6aps.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: http://localhost:9000/login/oauth2/code/google
+            scope:
+            - email
+            - profile
+#          naver:
+#            client-id:
+#            client-secret:
+#            redirect-uri:
+#            authorization-grant-type:
+#            scope:
+#            client-name: Naver
+#        provider:
+#          naver:
+#            authorization-uri:
+#            token-uri:
+#            user-info-uri:
+#            user-name-attribute:
+
